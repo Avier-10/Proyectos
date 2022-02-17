@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        //Defino variables Globales
+        var Filas = Number(prompt("Ingrese la Cantidad de Filas:"))
+        var Columnas = Number(prompt("Ingrese la Cantidad de Columnas:"))
+        var NumMax = Filas * Columnas
+        var n = 1
+        var NLimitador = 1
+        var NLimiteNegativo = 0
+
+        function GenMatrizEspiral(Filas, Columnas) {
+            let MatrizEspiral = new Array(Columnas) //Declaro de forma Local dentro de la Funcion
+
+            for (let i = 0; i <= (Filas - NLimitador); i++) {
+                MatrizEspiral[i] = new Array(Columnas) //Genera las Matrizes que vos a utilizar
+            }
+
+            for (let i = 0; i <= (Filas - NLimitador); i++) {
+                for (let j = 0; j <= (Columnas - NLimitador); j++) {
+                    MatrizEspiral[i][j] = new Array(Columnas)
+                    MatrizEspiral[i][j] = n     //Lleno las columnas con un numero
+                }
+            }
+
+            let i = 0 //Defino variables dentro de la funcion
+            let j = 0
+
+            //Bucle
+            while (n <= NumMax) {
+
+                //Genero la Fila hacia la derecha
+                for (j = j; j < (Columnas - NLimitador); j++) {
+                    if (n <= NumMax) {                         //Evito que dentro del for se pase contando
+                        MatrizEspiral[i][j] = n++
+                    }
+                }
+
+                //Genero la Columna hacia abajo
+                for (i = i; i < (Filas - NLimitador); i++) {
+                    if (n <= NumMax) {
+                        MatrizEspiral[i][j] = n++
+                    }
+                }
+
+                //Genero la Fila hacia la izquierda
+                for (j = j; j >= (NLimiteNegativo) && j <= (Columnas - NLimitador); j--) {
+                    if (n <= NumMax) {
+                        MatrizEspiral[i][j] = n++
+                    }
+                }
+                j = j + 1
+
+                //Genero la Columna hacia la arriba
+                for (i = (i - 1); i > (NLimiteNegativo) && i < (Filas - NLimitador); i--) {
+                    if (n <= NumMax) {
+                        MatrizEspiral[i][j] = n++
+                    }
+                }
+
+                NLimitador = NLimitador + 1
+                NLimiteNegativo = NLimiteNegativo + 1
+                j = j + 1
+                i = i + 1
+ 
+            }
+            return console.log(MatrizEspiral)
+        }
+
+        GenMatrizEspiral(Filas, Columnas)
+    </script>
+</body>
+
+</html>
