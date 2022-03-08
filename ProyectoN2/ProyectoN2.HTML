@@ -102,6 +102,7 @@
             content: "\274c";
             width: 90px;
             height: 90px;
+            text-align: center;
             -moz-border-radius: 50%;
             -webkit-border-radius: 50%;
             border-radius: 50%;
@@ -116,7 +117,7 @@
 </head>
 
 <body>
-    <button type="reset" id="Reset"></button>
+    <button type="button" id="Reset"></button>
     <div class="Tablero" id="TT">
         <div class="Caja1" id="uno"></div>
         <div class="Caja2" id="dos"></div>
@@ -162,88 +163,105 @@
         let Caja_9 = document.getElementsByClassName("Caja9")
 
         let Selector = 0
-        /*const ImagenCruz = document.createElement('img')
-        ImagenCruz.src = ''//poner imagen*/
 
         IDCaja1.onclick = function () {
-            if (Selector == 0) {
+            if (Selector == 0 && Caja_1[0].classList.length === 1 && IDCaja1.classList.length === 1) {
                 Caja_1[0].className = "Caja1 Figura_X"
                 Selector = 1
-            } else {
+
+            } else if (Selector == 1 && Caja_1[0].classList.length === 1 && IDCaja1.classList.length === 1) {
                 Caja_1[0].className = "Caja1 Figura_Circulo "
                 Selector = 0
+
             }
         }
+
         IDCaja2.onclick = function () {
-            if (Selector == 0) {
+            if (Selector == 0 && Caja_2[0].classList.length === 1 && IDCaja2.classList.length === 1) {
                 Caja_2[0].className = "Caja2 Figura_X"
                 Selector = 1
-            } else {
+
+            } else if (Selector == 1 && Caja_2[0].classList.length === 1 && IDCaja2.classList.length === 1) {
                 Caja_2[0].className = "Caja2 Figura_Circulo "
                 Selector = 0
+
             }
         }
         IDCaja3.onclick = function () {
-            if (Selector == 0) {
+            if (Selector == 0 && Caja_3[0].classList.length === 1 && IDCaja3.classList.length === 1) {
                 Caja_3[0].className = "Caja3 Figura_X"
                 Selector = 1
-            } else {
+
+            } else if (Selector == 1 && Caja_3[0].classList.length === 1 && IDCaja3.classList.length === 1) {
                 Caja_3[0].className = "Caja3 Figura_Circulo "
                 Selector = 0
+
             }
         }
         IDCaja4.onclick = function () {
-            if (Selector == 0) {
+            if (Selector == 0 && Caja_4[0].classList.length === 1 && IDCaja4.classList.length === 1) {
                 Caja_4[0].className = "Caja4 Figura_X"
                 Selector = 1
-            } else {
+
+            } else if (Selector == 1 && Caja_4[0].classList.length === 1 && IDCaja4.classList.length === 1) {
                 Caja_4[0].className = "Caja4 Figura_Circulo "
                 Selector = 0
+
             }
         }
         IDCaja5.onclick = function () {
-            if (Selector == 0) {
+            if (Selector == 0 && Caja_5[0].classList.length === 1 && IDCaja5.classList.length === 1) {
                 Caja_5[0].className = "Caja5 Figura_X"
                 Selector = 1
-            } else {
+
+            } else if (Selector == 1 && Caja_5[0].classList.length === 1 && IDCaja5.classList.length === 1) {
                 Caja_5[0].className = "Caja5 Figura_Circulo "
                 Selector = 0
+
             }
         }
         IDCaja6.onclick = function () {
-            if (Selector == 0) {
+            if (Selector == 0 && Caja_6[0].classList.length === 1 && IDCaja6.classList.length === 1) {
                 Caja_6[0].className = "Caja6 Figura_X"
                 Selector = 1
-            } else {
+
+            } else if (Selector == 1 && Caja_6[0].classList.length === 1 && IDCaja6.classList.length === 1) {
                 Caja_6[0].className = "Caja6 Figura_Circulo "
                 Selector = 0
+
             }
         }
         IDCaja7.onclick = function () {
-            if (Selector == 0) {
+            if (Selector == 0 && Caja_7[0].classList.length === 1 && IDCaja7.classList.length === 1) {
                 Caja_7[0].className = "Caja7 Figura_X"
                 Selector = 1
-            } else {
+
+            } else if (Selector == 1 && Caja_7[0].classList.length === 1 && IDCaja7.classList.length === 1) {
                 Caja_7[0].className = "Caja7 Figura_Circulo "
                 Selector = 0
+
             }
         }
         IDCaja8.onclick = function () {
-            if (Selector == 0) {
+            if (Selector == 0 && Caja_8[0].classList.length === 1 && IDCaja8.classList.length === 1) {
                 Caja_8[0].className = "Caja8 Figura_X"
                 Selector = 1
-            } else {
+
+            } else if (Selector == 1 && Caja_8[0].classList.length === 1 && IDCaja8.classList.length === 1) {
                 Caja_8[0].className = "Caja8 Figura_Circulo "
                 Selector = 0
+
             }
         }
         IDCaja9.onclick = function () {
-            if (Selector == 0) {
+            if (Selector == 0 && Caja_9[0].classList.length === 1 && IDCaja9.classList.length === 1) {
                 Caja_9[0].className = "Caja9 Figura_X"
                 Selector = 1
-            } else {
+
+            } else if (Selector == 1 && Caja_9[0].classList.length === 1 && IDCaja9.classList.length === 1) {
                 Caja_9[0].className = "Caja9 Figura_Circulo "
                 Selector = 0
+
             }
         }
 
