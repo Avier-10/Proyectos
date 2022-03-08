@@ -4,6 +4,7 @@
 <head>
     <title>Juego de Tres en Ralla </title>
     <h1> 3 En Ralla </h1>
+
     <style>
         .CajaPresionada {
             grid-area: Caja1;
@@ -106,6 +107,10 @@
             border-radius: 50%;
             background: #5cb85c;
         }
+        /*Jugadores nombres*/
+        .letra {
+          font-weight: bold
+        }
     </style>
 
 </head>
@@ -122,6 +127,15 @@
         <div class="Caja7" id="siete"></div>
         <div class="Caja8" id="ocho"></div>
         <div class="Caja9" id="nueve"></div>
+    </div>
+    <div>
+      <h3>JUGADORES</h3>
+      <div id="jugador1">
+        <p>Jugador 1</p>
+      </div>
+      <div id="jugador2">
+        <p>Jugador2</p>
+      </div>
     </div>
 
     <script>
@@ -248,7 +262,7 @@
 
 
     </script>
-
+<script src="datosUsuario.js"></script>
 </body>
 
 </html>
