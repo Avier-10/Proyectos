@@ -66,18 +66,53 @@
                 "Caja7 Caja8 Caja9";
         }
 
-        .probando {
-            background-color: blue;
-            width: 100px;
+        .Figura_X {
             height: 100px;
+            width: 100px;
+            background-color: #FA6900;
+            border-radius: 5px;
+            position: relative;
+        }
+
+        .Figura_X:after {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            content: "\274c";
+            font-size: 50px;
+            color: #FFF;
+            line-height: 100px;
+            text-align: center;
+
+        }
+
+        .Figura_Circulo {
+            height: 100px;
+            width: 100px;
+            background-color: #FA6900;
+            border-radius: 5px;
+            position: relative;
+        }
+
+        .Figura_Circulo::after {
+            position: absolute;
+            content: "\274c";
+            width: 90px;
+            height: 90px;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            border-radius: 50%;
+            background: #5cb85c;
         }
     </style>
 
 </head>
 
 <body>
-
-    <div class="Tablero">
+    <button type="reset" id="Reset"></button>
+    <div class="Tablero" id="TT">
         <div class="Caja1" id="uno"></div>
         <div class="Caja2" id="dos"></div>
         <div class="Caja3" id="tres"></div>
@@ -91,6 +126,8 @@
 
     <script>
         let tablero = document.getElementsByClassName("Tablero")
+        //let Tablerazo = document.getElementById("TT")
+        let BotonReset = document.getElementById("Reset")
         let IDCaja1 = document.getElementById("uno")
         let IDCaja2 = document.getElementById("dos")
         let IDCaja3 = document.getElementById("tres")
@@ -109,23 +146,105 @@
         let Caja_7 = document.getElementsByClassName("Caja7")
         let Caja_8 = document.getElementsByClassName("Caja8")
         let Caja_9 = document.getElementsByClassName("Caja9")
-        let CajaPress = document.getElementsByClassName("CajaPresionada");
 
-        let cont = 0
-        const ImagenCruz=document.createElement('img')
-        ImagenCruz.src=''//poner imagen
+        let Selector = 0
+        /*const ImagenCruz = document.createElement('img')
+        ImagenCruz.src = ''//poner imagen*/
 
         IDCaja1.onclick = function () {
-            Caja_1[0].className = document.querySelector('.Caja1').appendChild(ImagenCruz)
-            cont++
-            console.log(cont)
-            console.log(Caja_1)
+            if (Selector == 0) {
+                Caja_1[0].className = "Caja1 Figura_X"
+                Selector = 1
+            } else {
+                Caja_1[0].className = "Caja1 Figura_Circulo "
+                Selector = 0
+            }
+        }
+        IDCaja2.onclick = function () {
+            if (Selector == 0) {
+                Caja_2[0].className = "Caja2 Figura_X"
+                Selector = 1
+            } else {
+                Caja_2[0].className = "Caja2 Figura_Circulo "
+                Selector = 0
+            }
+        }
+        IDCaja3.onclick = function () {
+            if (Selector == 0) {
+                Caja_3[0].className = "Caja3 Figura_X"
+                Selector = 1
+            } else {
+                Caja_3[0].className = "Caja3 Figura_Circulo "
+                Selector = 0
+            }
+        }
+        IDCaja4.onclick = function () {
+            if (Selector == 0) {
+                Caja_4[0].className = "Caja4 Figura_X"
+                Selector = 1
+            } else {
+                Caja_4[0].className = "Caja4 Figura_Circulo "
+                Selector = 0
+            }
+        }
+        IDCaja5.onclick = function () {
+            if (Selector == 0) {
+                Caja_5[0].className = "Caja5 Figura_X"
+                Selector = 1
+            } else {
+                Caja_5[0].className = "Caja5 Figura_Circulo "
+                Selector = 0
+            }
+        }
+        IDCaja6.onclick = function () {
+            if (Selector == 0) {
+                Caja_6[0].className = "Caja6 Figura_X"
+                Selector = 1
+            } else {
+                Caja_6[0].className = "Caja6 Figura_Circulo "
+                Selector = 0
+            }
+        }
+        IDCaja7.onclick = function () {
+            if (Selector == 0) {
+                Caja_7[0].className = "Caja7 Figura_X"
+                Selector = 1
+            } else {
+                Caja_7[0].className = "Caja7 Figura_Circulo "
+                Selector = 0
+            }
+        }
+        IDCaja8.onclick = function () {
+            if (Selector == 0) {
+                Caja_8[0].className = "Caja8 Figura_X"
+                Selector = 1
+            } else {
+                Caja_8[0].className = "Caja8 Figura_Circulo "
+                Selector = 0
+            }
+        }
+        IDCaja9.onclick = function () {
+            if (Selector == 0) {
+                Caja_9[0].className = "Caja9 Figura_X"
+                Selector = 1
+            } else {
+                Caja_9[0].className = "Caja9 Figura_Circulo "
+                Selector = 0
+            }
         }
 
-
-
-
-
+        BotonReset.onclick = function () {
+            Caja_1[0].className = "Caja1"
+            Caja_2[0].className = "Caja2"
+            Caja_3[0].className = "Caja3"
+            Caja_4[0].className = "Caja4"
+            Caja_5[0].className = "Caja5"
+            Caja_6[0].className = "Caja6"
+            Caja_7[0].className = "Caja7"
+            Caja_8[0].className = "Caja8"
+            Caja_9[0].className = "Caja9"
+            console.log(Selector)
+        }
 
 
     </script>
