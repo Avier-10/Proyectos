@@ -15,13 +15,17 @@ class Jugador{
         }
     }
     turno(){
-        txt.innerHTML = `Es el turno de ${this.nombre}`
+        txt.innerHTML = `<p class="turno">Es el turno de ${this.nombre}</p>`
     }
 
     piezas(){
         txt.innerHTML =  `Estas usando ${this.figura}, en color ${this.color}. Buena suerte!`
     }
+
+    ganador(){
+        txt.innerHTML =  `Felicidades ${this.nombre}, ganaste!`
+    }
 }
 
-const jugador1 = new Jugador()
-const jugador2 = new Jugador()
+const jugador1 = new Jugador("paquita", "rojo", "X")
+const jugador2 = new Jugador("raul", "negro", "O")
