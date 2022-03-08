@@ -1,36 +1,23 @@
 let rellenar = (id)=>{
-    if(selector === 0){
+    if(selector === 0 && document.getElementById(id).innerHTML.length === 0){
         jugador1.turno()
         document.getElementById(id).innerHTML = jugador1.figura
         selector = 1
-    }else if (selector === 1){
+    }else if (selector === 1 && document.getElementById(id).innerHTML.length === 0){
         jugador2.turno()
         document.getElementById(id).innerHTML = jugador2.figura
         selector = 0
+    }else{
+        alert(`No puedes realizar este movimiento, la caja ${id} esta ocupada`)
     }
 }
 
 
 let BotonReset = document.getElementById("Reset");
-let idCaja1 = document.getElementById("1");
-let idCaja2 = document.getElementById("2");
-let idCaja3 = document.getElementById("3");
-let idCaja4 = document.getElementById("4");
-let idCaja5 = document.getElementById("5");
-let idCaja6 = document.getElementById("6");
-let idCaja7 = document.getElementById("7");
-let idCaja8 = document.getElementById("8");
-let idCaja9 = document.getElementById("9");
-
-const cajas = []
-cajas.push(idCaja1, idCaja2, idCaja3, idCaja4, idCaja5, idCaja6, idCaja7, idCaja8, idCaja9);
-
 
 const ganador = [[0,1,2],[3,4,5],[6,7,8],[0,4,8],[0,3,6],[1,4,7],[2,5,8],[2,4,6]];
 
 let selector = 0;
-
-
 
 
 
