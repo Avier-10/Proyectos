@@ -26,11 +26,7 @@ class Jugador{
 
 
 }
-const jugador1 = new Jugador(
-  // se necesita importar la variable nombre1
-)
-const jugador2 = new Jugador(
-    // se necesita importar la variable nombre2
-)
+const jugador1 = new Jugador(player1)
+const jugador2 = new Jugador(player2)
 
 console.log(jugador1.turno());
