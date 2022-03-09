@@ -91,7 +91,7 @@
 
 .Figura_Circulo::after {
     position: absolute;
-    content: "\274c";
+    content: "";
     width: 90px;
     height: 90px;
     text-align: center;
