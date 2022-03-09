@@ -30,7 +30,7 @@ const jugador1 = new Jugador(
   // se necesita importar la variable nombre1
 )
 const jugador2 = new Jugador(
-    // se necesita importar la variable nombre2 
+    // se necesita importar la variable nombre2
 )
 
 console.log(jugador1.turno());
