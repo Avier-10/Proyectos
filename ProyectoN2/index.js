@@ -1,12 +1,12 @@
 let rellenar = (id)=>{
-    if(selector === 0 && document.getElementById(id).innerHTML.length === 0){
-        jugador1.turno()
-        document.getElementById(id).innerHTML = jugador1.figura
+    if(selector === 0 && document.getElementById(id).classList.length === 1){
+        document.getElementById(id).classList.add (jugador1.figura)
         selector = 1
-    }else if (selector === 1 && document.getElementById(id).innerHTML.length === 0){
         jugador2.turno()
-        document.getElementById(id).innerHTML = jugador2.figura
+    }else if (selector === 1 && document.getElementById(id).classList.length === 1 ){
+        document.getElementById(id).classList.add (jugador2.figura)
         selector = 0
+        jugador1.turno()
     }else{
         alert(`No puedes realizar este movimiento, la caja ${id} esta ocupada`)
     }
