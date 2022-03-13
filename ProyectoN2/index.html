@@ -8,27 +8,54 @@
     <title>Juego de Tres en Raya</title>
 </head>
 <body>
+     <header>
     <h1> 3 En Raya </h1>
-    <button type="button" id="Reset">Restablecer</button>
-    <div class="Tablero" id="TT">
-        <div class="Caja1 " id="1" onclick="rellenar(id)"></div>
-        <div class="Caja2 " id="2" onclick="rellenar(id)"></div>
-        <div class="Caja3 " id="3" onclick="rellenar(id)"></div>
-        <div class="Caja4 " id="4" onclick="rellenar(id)"></div>
-        <div class="Caja5 " id="5" onclick="rellenar(id)"></div>
-        <div class="Caja6 " id="6" onclick="rellenar(id)"></div>
-        <div class="Caja7 " id="7" onclick="rellenar(id)"></div>
-        <div class="Caja8 " id="8" onclick="rellenar(id)"></div>
-        <div class="Caja9 " id="9" onclick="rellenar(id)"></div>
-    </div>
-    <h3>JUGADORES</h3>
-    <div id="jugador1">
+  </header>
+  <h3>JUGADORES</h3>
+ <div class="allplayer">
+    <div id="jugador1" class="play">
       <p>Jugador 1</p>
       <div id="color1"></div>
+      <p>Elije tu figura</p>
+      <div class="figurillas">
+        <div id="cir" onclick="seleccion(id)"><img src="img/1.png" alt="" srcset=""></div>
+        <div id="cua" onclick="seleccion(id)"><img src="img/2.png" alt="" srcset=""></div>
+        <div id="tri" onclick="seleccion(id)"><img src="img/3.png" alt="" srcset=""></div>
+        <div id="eq" onclick="seleccion(id)"><img src="img/4.png" alt="" srcset=""></div>
+      </div>
+      <div id="point"></div>
     </div>
-    <div id="jugador2">
+    <div id="jugador2" class="play">
       <p>Jugador2</p>
       <div id="color2"></div>
+      <p>Elije tu figura</p>
+      <div class="figurillas">
+        <div id="cir2" onclick="seleccion2(id)"><img src="img/1.png" alt="" srcset=""></div>
+        <div id="cua2" onclick="seleccion2(id)"><img src="img/2.png" alt="" srcset=""></div>
+        <div id="tri2" onclick="seleccion2(id)"><img src="img/3.png" alt="" srcset=""></div>
+        <div id="eq2" onclick="seleccion2(id)"><img src="img/4.png" alt="" srcset=""></div>
+      </div>
+      <div id="point"></div>
+    </div>  
+  </div>
+  
+    
+    <div class="btn">
+      <button type="button" id="Reset">Restablecer</button>
+    </div>
+    
+    <div class="tablerocontainer">
+        <div class="Tablero" id="TT">
+            <div class="Caja1 " id="1" onclick="rellenar(id)"></div>
+            <div class="Caja2 " id="2" onclick="rellenar(id)"></div>
+            <div class="Caja3 " id="3" onclick="rellenar(id)"></div>
+            <div class="Caja4 " id="4" onclick="rellenar(id)"></div>
+            <div class="Caja5 " id="5" onclick="rellenar(id)"></div>
+            <div class="Caja6 " id="6" onclick="rellenar(id)"></div>
+            <div class="Caja7 " id="7" onclick="rellenar(id)"></div>
+            <div class="Caja8 " id="8" onclick="rellenar(id)"></div>
+            <div class="Caja9 " id="9" onclick="rellenar(id)"></div>
+        </div>
     </div>
 
     <script src="./menu/index.js" type="module"></script>
