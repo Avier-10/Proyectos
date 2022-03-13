@@ -1,10 +1,12 @@
 let rellenar = (id)=>{
     if(selector === 0 && document.getElementById(id).classList.length === 1){
         document.getElementById(id).classList.add (jugador1.figura)
+        document.getElementById(id).style.background = jugador1.color;
         selector = 1
         jugador2.turno()
     }else if (selector === 1 && document.getElementById(id).classList.length === 1 ){
         document.getElementById(id).classList.add (jugador2.figura)
+        document.getElementById(id).style.background = jugador2.color;
         selector = 0
         jugador1.turno()
     }else{
