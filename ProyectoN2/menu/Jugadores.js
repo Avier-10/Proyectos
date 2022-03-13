@@ -11,6 +11,7 @@ const azulFondo = "#d19fe8"*/
 class Jugadores{
     constructor(nombre, color){
         this.nombre = nombre
+        this.figura = figura
         this.color = color
     }
     mostrarNombre(){
@@ -22,6 +23,7 @@ class Jugadores{
         const naranja = "#ff4500"
         const morado = "#800080"
         const azul = "#20b2aa"
+        
         switch (this.color) {
             case "verde":
                 return verde
