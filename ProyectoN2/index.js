@@ -19,8 +19,33 @@ const ganador = [[0,1,2],[3,4,5],[6,7,8],[0,4,8],[0,3,6],[1,4,7],[2,5,8],[2,4,6]
 
 let selector = 0;
 
+let seleccion = (id) => {
+    if (id == "cir") {
+        return pl1 = "Figura_Circulo";
+    } else if (id == "cua") {
+        return (pl1 = "Figura_Cuadrado");
+    } else if (id == "tri") {
+        return (pl1 = "Figura_Triangulo");
+    } else if (id == "eq") {
+        return (pl1 = "Figura_X");
+    } else {
+        return;
+    }
+};
 
-
+let seleccion2 = (id) => {
+    if (id == "cir2") {
+        return (pl2 = "Figura_Circulo");
+    } else if (id == "cua2") {
+        return (pl2 = "Figura_Cuadrado");
+    } else if (id == "tri2") {
+        return (pl2 = "Figura_Triangulo");
+    } else if (id == "eq2") {
+        return (pl2 = "Figura_X");
+    } else {
+        return;
+    }
+};
 
 
 /*
