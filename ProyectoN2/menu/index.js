@@ -1,6 +1,5 @@
 //Importaciones
-import Nombre from "./Nombre.js"
-import Color from "./Color.js"
+import Jugadores from "./Jugadores.js"
 
 // nombre de jugadores
 let nombre1 = prompt("Ingresa tu nombre jugador 1: ");
@@ -10,11 +9,9 @@ let nombre2 = prompt("Ingresa tu nombre jugador 2: ");
 const color1 = prompt("Jugador 1 elige el color de tu figura: verde, naranja, morado o azul ");
 const color2 = prompt("Jugador 2 elige el color de tu figura: verde, naranja, morado o azul ");
 
-// ejecutar clases
-const jugador1 = new Nombre(nombre1);
-const jugador2 = new Nombre(nombre2);
-const colores1 = new Color(color1);
-const colores2 = new Color(color2);
+// ejecutar clase
+const jugador1 = new Jugadores(nombre1, color1);
+const jugador2 = new Jugadores(nombre2, color2);
 
 // mostrar en el Dom 
 let name1 = document.createElement("p");
@@ -26,14 +23,11 @@ name2.innerHTML = jugador2.mostrarNombre();
 document.getElementById("jugador2").appendChild(name2);
 
 let colors1 = document.getElementById('color1');
-colors1.style.backgroundColor = colores1.mostrarColor(); 
+colors1.style.backgroundColor = jugador1.mostrarColor(); 
 
 let colors2 = document.getElementById('color2');
-colors2.style.backgroundColor = colores2.mostrarColor(); 
+colors2.style.backgroundColor = jugador2.mostrarColor(); 
 
 // mostrar en consola
-console.log(jugador1.mostrarNombre());
-console.log(jugador2.mostrarNombre());
-console.log(colores1.mostrarColor());
-console.log(colores2.mostrarColor());
-
+console.log(jugador1);
+console.log(jugador2);
