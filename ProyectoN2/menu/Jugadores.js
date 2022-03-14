@@ -9,13 +9,13 @@ const azul = "#20b2aa"
 const azulFondo = "#d19fe8"*/
 
 class Jugadores{
-    constructor(nombre, figura, color){
+    constructor(nombre,color, figura){
         this.nombre = nombre
         this.figura = figura
         this.color = color
     }
     mostrarNombre(){
-        return `Hola ${this.nombre}`
+        return `Bienvenid@ <b>${this.nombre}</b>`
     }
     mostrarColor(){
         // variables
