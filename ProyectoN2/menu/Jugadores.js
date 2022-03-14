@@ -9,7 +9,7 @@ const azul = "#20b2aa"
 const azulFondo = "#d19fe8"*/
 
 class Jugadores{
-    constructor(nombre, color){
+    constructor(nombre, figura, color){
         this.nombre = nombre
         this.figura = figura
         this.color = color
