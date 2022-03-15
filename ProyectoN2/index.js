@@ -17,87 +17,41 @@ let rellenar = (id)=>{
 
 let BotonReset = document.getElementById("Reset");
 
-const ganador = [[0,1,2],[3,4,5],[6,7,8],[0,4,8],[0,3,6],[1,4,7],[2,5,8],[2,4,6]];
-
 let selector = 0;
 
-let seleccion = (id) => {
-    if(id == "cir" && pl2 != "Figura_Circulo" ){
-        pl1 = "Figura_Circulo" 
-        document.getElementById(id).classList.add ("contenedorFigurasClick")
-        document.getElementById("cua").classList.remove ("contenedorFigurasClick")
-        document.getElementById("tri").classList.remove ("contenedorFigurasClick")
-        document.getElementById("eq").classList.remove ("contenedorFigurasClick")
-    } else if(id == "cir" && pl2 == "Figura_Circulo" ){
-        alert("Selecciona otra figura!")
-    }
-    if(id == "cua" && pl2 != "Figura_Cuadrado" ){
-        pl1 = "Figura_Cuadrado" 
-        document.getElementById(id).classList.add ("contenedorFigurasClick")
-        document.getElementById("cir").classList.remove ("contenedorFigurasClick")
-        document.getElementById("tri").classList.remove ("contenedorFigurasClick")
-        document.getElementById("eq").classList.remove ("contenedorFigurasClick")
-    }else if(id == "cua" && pl2 == "Figura_Cuadrado" ){
-        alert("Selecciona otra figura!")
-    }
-    if(id == "tri"  && pl2 != "Figura_Triangulo"){
-        pl1 = "Figura_Triangulo" 
-        document.getElementById(id).classList.add ("contenedorFigurasClick")
-        document.getElementById("cua").classList.remove ("contenedorFigurasClick")
-        document.getElementById("cir").classList.remove ("contenedorFigurasClick")
-        document.getElementById("eq").classList.remove ("contenedorFigurasClick")
-    }else if(id == "tri"  && pl2 == "Figura_Triangulo"){
-        alert("Selecciona otra figura!")
-    }
-    if(id == "eq"  && pl2 != "Figura_X"){
-        pl1 = "Figura_X" 
-        document.getElementById(id).classList.add ("contenedorFigurasClick")
-        document.getElementById("cua").classList.remove ("contenedorFigurasClick")
-        document.getElementById("tri").classList.remove ("contenedorFigurasClick")
-        document.getElementById("cir").classList.remove ("contenedorFigurasClick")
-    } else if(id == "eq"  && pl2 == "Figura_X"){
-        alert("Selecciona otra figura!")
-    }
+let seleccion3 = (id, figura, jugador, figuraComparar, jugador2, figCir, figCua, figTri, figEq, idDiv) => {
     
+    if(id == figura && jugador2 != figuraComparar ){
+        if(jugador == "pl1"){
+            pl1 = figuraComparar ;
+        }else if(jugador == "pl2"){
+            pl2 = figuraComparar ;
+        }
+        
+        document.getElementById(figCua).classList.remove ("contenedorFigurasClick")
+        document.getElementById(figTri).classList.remove ("contenedorFigurasClick")
+        document.getElementById(figEq).classList.remove ("contenedorFigurasClick")
+        document.getElementById(figCir).classList.remove ("contenedorFigurasClick")
+        
+        document.getElementById(idDiv).innerHTML = ""
+        document.getElementById(id).classList.add ("contenedorFigurasClick")
+    } else if(id == figura && jugador2 == figuraComparar ){
+        document.getElementById(idDiv).innerHTML = `No puedes seleccionar esta figura, elije otra.`
+    }
+}
+
+let seleccion = (id) => {
+    seleccion3(id, "cir", "pl1", "Figura_Circulo", pl2, "cir", "cua", "tri", "eq", "errorFig1")
+    seleccion3(id, "cua", "pl1", "Figura_Cuadrado", pl2, "cir", "cua", "tri", "eq", "errorFig1")
+    seleccion3(id, "tri", "pl1", "Figura_Triangulo", pl2, "cir", "cua", "tri", "eq", "errorFig1")
+    seleccion3(id, "eq", "pl1", "Figura_X", pl2, "cir", "cua", "tri", "eq", "errorFig1")    
 };
 
 let seleccion2 = (id) => {
-    if(id == "cir2" && pl1 != "Figura_Circulo"){
-        pl2 = "Figura_Circulo" 
-        document.getElementById(id).classList.add ("contenedorFigurasClick")
-        document.getElementById("cua2").classList.remove ("contenedorFigurasClick")
-        document.getElementById("tri2").classList.remove ("contenedorFigurasClick")
-        document.getElementById("eq2").classList.remove ("contenedorFigurasClick")
-    }else if(id == "cir2" && pl1 == "Figura_Circulo" ){
-        alert("Selecciona otra figura!")
-    }
-    if(id == "cua2" && pl1 != "Figura_Cuadrado"){
-        pl2 = "Figura_Cuadrado" 
-        document.getElementById(id).classList.add ("contenedorFigurasClick")
-        document.getElementById("cir2").classList.remove ("contenedorFigurasClick")
-        document.getElementById("tri2").classList.remove ("contenedorFigurasClick")
-        document.getElementById("eq2").classList.remove ("contenedorFigurasClick")
-    }else if(id == "cua2" && pl1 == "Figura_Cuadrado" ){
-        alert("Selecciona otra figura!")
-    }
-    if(id == "tri2" && pl1 != "Figura_Triangulo"){
-        pl2 = "Figura_Triangulo" 
-        document.getElementById(id).classList.add ("contenedorFigurasClick")
-        document.getElementById("cua2").classList.remove ("contenedorFigurasClick")
-        document.getElementById("cir2").classList.remove ("contenedorFigurasClick")
-        document.getElementById("eq2").classList.remove ("contenedorFigurasClick")
-    }else if(id == "tri2"  && pl1 == "Figura_Triangulo"){
-        alert("Selecciona otra figura!")
-    }
-    if(id == "eq2" && pl1 != "Figura_X"){
-        pl2 = "Figura_X" 
-        document.getElementById(id).classList.add ("contenedorFigurasClick")
-        document.getElementById("cua2").classList.remove ("contenedorFigurasClick")
-        document.getElementById("tri2").classList.remove ("contenedorFigurasClick")
-        document.getElementById("cir2").classList.remove ("contenedorFigurasClick")
-    }else if(id == "eq2"  && pl1 == "Figura_X"){
-        alert("Selecciona otra figura!")
-    }
+    seleccion3(id, "cir2", "pl2", "Figura_Circulo", pl1, "cir2", "cua2", "tri2", "eq2", "errorFig2")
+    seleccion3(id, "cua2", "pl2", "Figura_Cuadrado", pl1, "cir2", "cua2", "tri2", "eq2", "errorFig2")
+    seleccion3(id, "tri2", "pl2", "Figura_Triangulo", pl1, "cir2", "cua2", "tri2", "eq2", "errorFig2")
+    seleccion3(id, "eq2", "pl2", "Figura_X", pl1, "cir2", "cua2", "tri2", "eq2", "errorFig2")
 };
 
 let pl2;
