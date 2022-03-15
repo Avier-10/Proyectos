@@ -87,6 +87,13 @@ body{
     font-size: 30px;
     text-align: center
 }
+.Finish{
+    margin: 8px;
+    color: #fff;
+    letter-spacing: 8px;
+    font-size: 23px;
+    text-align: center
+}
 /*--- Tablero y botón ----*/
 .btn{
     display: flex;
@@ -171,10 +178,6 @@ button{
     border-radius: 10px;
 }
 /*---- Figuras ----*/
-.CajaPresionada {
-    grid-area: Caja1;
-    background-color: blue;
-}
 .Figura_X {
     display: flex;
     justify-content: center;

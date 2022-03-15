@@ -30,4 +30,4 @@ document.getElementById("jugador1").appendChild(name1);
 
 // mostrar en consola
 console.log(jugador1);
-console.log(jugador1);
+console.log(jugador2);
