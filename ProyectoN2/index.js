@@ -31,11 +31,11 @@ let rellenar = (id) => {
 
     if (Juego_Terminado === 0) {
         if (selector === 0 && document.getElementById(id).classList.length === 1) {
-            document.getElementById(id).classList.add(Jugador1.className)
+            document.getElementById(id).classList.add(pl1)
             document.getElementById(id).style.background = Jugador1.color;//
             selector = 1
         } else if (selector === 1 && document.getElementById(id).classList.length === 1) {
-            document.getElementById(id).classList.add(Jugador2.className)
+            document.getElementById(id).classList.add(pl2)
             document.getElementById(id).style.background = Jugador2.color;//
             selector = 0
         } else {
@@ -45,13 +45,14 @@ let rellenar = (id) => {
         alert('El juego esta terminado')
     }
 }
+
 let seleccion3 = (id, figura, jugador, figuraComparar, jugador2, figCir, figCua, figTri, figEq, idDiv) => {
 
     if (id == figura && jugador2 != figuraComparar) {
         if (jugador == "pl1") {
-            document.getElementById("jugador1").classList.remove(pl1)
+            document.getElementById("jugador1").classList.remove(pl1)// se borra la figura que hay en jugador 1
             pl1 = figuraComparar;
-            document.getElementById("jugador1").classList.add(pl1)
+            document.getElementById("jugador1").classList.add(pl1)//agrego nueva figura
         } else if (jugador == "pl2") {
             document.getElementById("jugador2").classList.remove(pl2)
             pl2 = figuraComparar;
