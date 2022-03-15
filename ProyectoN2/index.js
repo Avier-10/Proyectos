@@ -63,9 +63,9 @@ let seleccion3 = (id, figura, jugador, figuraComparar, jugador2, figCir, figCua,
         document.getElementById(figTri).classList.remove("contenedorFigurasClick")
         document.getElementById(figEq).classList.remove("contenedorFigurasClick")
         document.getElementById(figCir).classList.remove("contenedorFigurasClick")
-
         document.getElementById(idDiv).innerHTML = ""
         document.getElementById(id).classList.add("contenedorFigurasClick")
+        
     } else if (id == figura && jugador2 == figuraComparar) {
         document.getElementById(idDiv).innerHTML = `<p class="txterror"> No puedes seleccionar esta figura, elije otra. </p>`
     }
