@@ -51,7 +51,7 @@ function colorSeleccionado() {
     const naranja = "#ff4500"
     const morado = "#800080"
     const azul = "#20b2aa"
-    let resultado
+    
     if (this.checked) {
         if("azul" === this.value){
             resultado = azul
@@ -63,7 +63,7 @@ function colorSeleccionado() {
             resultado = morado
         }
     }
-    return console.log(resultado)
+    return resultado
 }
 
 // color jugador 2
@@ -88,7 +88,7 @@ function colorSeleccionado2() {
     const naranja = "#ff4500"
     const morado = "#800080"
     const azul = "#20b2aa"
-    let resultado2
+    
     if (this.checked) {
         if("azul" === this.value){
             resultado2 = azul
@@ -100,8 +100,11 @@ function colorSeleccionado2() {
             resultado2 = morado
         }
     }
-    return console.log(resultado2)
+    return resultado2
 }
+
+let resultado
+let resultado2
 
 // mostrar en consola
 console.log(jugador1);
