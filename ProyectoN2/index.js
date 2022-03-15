@@ -21,6 +21,15 @@ let rellenar = (id) => {
         Caja_7[0].className = "Caja7"
         Caja_8[0].className = "Caja8"
         Caja_9[0].className = "Caja9"
+        document.getElementById("1").style.background = "white";
+        document.getElementById("2").style.background = "white";
+        document.getElementById("3").style.background = "white";
+        document.getElementById("4").style.background = "white";
+        document.getElementById("5").style.background = "white";
+        document.getElementById("6").style.background = "white";
+        document.getElementById("7").style.background = "white";
+        document.getElementById("8").style.background = "white";
+        document.getElementById("9").style.background = "white";
         selector = 0
         Juego_Terminado = 0
         document.getElementById("Finish").innerHTML = ""
@@ -32,11 +41,12 @@ let rellenar = (id) => {
     if (Juego_Terminado === 0) {
         if (selector === 0 && document.getElementById(id).classList.length === 1) {
             document.getElementById(id).classList.add(pl1)
-            document.getElementById(id).style.background = colorSeleccionado();
+            document.getElementById(id).style.background = resultado;
             selector = 1
         } else if (selector === 1 && document.getElementById(id).classList.length === 1) {
             document.getElementById(id).classList.add(pl2)
-            document.getElementById(id).style.background = Jugador2.color;//
+            document.getElementById(id).style.background = resultado2
+            //
             selector = 0
         } else {
             alert(`No puedes realizar este movimiento, la caja ${id} esta ocupada`)
