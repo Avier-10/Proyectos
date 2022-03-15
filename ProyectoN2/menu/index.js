@@ -50,21 +50,24 @@ for(const radioButton of radioButtons){
 
 
 function colorSeleccionado() {
-
+    let resultado
     if (this.checked) {
         if("azul" === this.value){
-            console.log(azul)
+            resultado = azul
         }else if("verde" === this.value){
-            console.log(verde)
+            resultado = verde
         }else if("naranja" === this.value){
-            console.log(naranja)
+            resultado = naranja
         }else if("morado" == this.value){
-            console.log(morado)
+            resultado = morado
         }
     }
+    return console.log(resultado)
+
 }
 
 
 // mostrar en consola
 console.log(jugador1);
 console.log(jugador2);
+colorSeleccionado()
