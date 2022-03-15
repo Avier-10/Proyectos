@@ -20,7 +20,6 @@ let BotonReset = document.getElementById("Reset");
 let selector = 0;
 
 let seleccion3 = (id, figura, jugador, figuraComparar, jugador2, figCir, figCua, figTri, figEq, idDiv) => {
-    
     if(id == figura && jugador2 != figuraComparar ){
         if(jugador == "pl1"){
             pl1 = figuraComparar ;
