@@ -29,10 +29,7 @@ document.getElementById("nombrecont2").appendChild(name2);
 
 
 // color jugador 1
-const verde = "#1bd832"
-const naranja = "#ff4500"
-const morado = "#800080"
-const azul = "#20b2aa"
+
 
 const color = ["verde", "naranja", "morado", "azul"];
 
@@ -50,6 +47,10 @@ for(const radioButton of radioButtons){
 
 
 function colorSeleccionado() {
+    const verde = "#1bd832"
+    const naranja = "#ff4500"
+    const morado = "#800080"
+    const azul = "#20b2aa"
     let resultado
     if (this.checked) {
         if("azul" === this.value){
@@ -63,11 +64,47 @@ function colorSeleccionado() {
         }
     }
     return console.log(resultado)
-
 }
 
+// color jugador 2
+
+const color2 = ["verde", "naranja", "morado", "azul"];
+
+const colores2 = document.querySelector("#radioColores2");
+colores2.innerHTML = color2.map((colores2) => 
+    `<div>
+      <input type="radio" name="colores2" value="${colores2}" id="${colores2}">
+      <label for="${colores2}">${colores2}</label>
+    </div>`).join(' ');
+
+const radioButtons2 = document.querySelectorAll('input[name="colores2"]');
+for(const radioButton2 of radioButtons2){
+    radioButton2.addEventListener('change', colorSeleccionado2);
+} 
+
+
+function colorSeleccionado2() {
+    const verde = "#1bd832"
+    const naranja = "#ff4500"
+    const morado = "#800080"
+    const azul = "#20b2aa"
+    let resultado2
+    if (this.checked) {
+        if("azul" === this.value){
+            resultado2 = azul
+        }else if("verde" === this.value){
+            resultado2 = verde
+        }else if("naranja" === this.value){
+            resultado2 = naranja
+        }else if("morado" == this.value){
+            resultado2 = morado
+        }
+    }
+    return console.log(resultado2)
+}
 
 // mostrar en consola
 console.log(jugador1);
 console.log(jugador2);
 colorSeleccionado()
+colorSeleccionado2()

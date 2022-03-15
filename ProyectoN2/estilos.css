@@ -313,6 +313,9 @@ button{
     border-radius: 90px;
     opacity: 0.6;
 }
+.letra{
+    font-size: 20px;
+}
 /*PARA HACER PRUEBAS*/
 /*#color1 {
     width: 50px;

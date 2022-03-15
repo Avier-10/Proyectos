@@ -32,7 +32,7 @@ let rellenar = (id) => {
     if (Juego_Terminado === 0) {
         if (selector === 0 && document.getElementById(id).classList.length === 1) {
             document.getElementById(id).classList.add(pl1)
-            document.getElementById(id).style.background = Jugador1.color;//
+            document.getElementById(id).style.background = colorSeleccionado();
             selector = 1
         } else if (selector === 1 && document.getElementById(id).classList.length === 1) {
             document.getElementById(id).classList.add(pl2)
