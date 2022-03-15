@@ -41,4 +41,3 @@ class Jugadores{
         }
     }
 
-export default Jugadores

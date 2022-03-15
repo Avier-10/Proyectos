@@ -45,10 +45,44 @@ body{
     background-color: #F68989;
 }
 
-.txterror{
+#errorFig2{
+    height: 40px;
     color: red;
     font-size: 15px;
     text-align: center;
+}
+
+#errorFig1{
+    height: 40px;
+    color: red;
+    font-size: 15px;
+    text-align: center;
+}
+
+#jugador1{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+#jugador2{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+#point1{
+    height: 30px;
+    text-align: center;
+    font-size: 25px;
+    color: #4D77FF;
+}
+
+#point2{
+    height: 30px;
+    text-align: center;
+    font-size: 25px;
+    color: #F0A500;
 }
 
 .contenedorColores {
