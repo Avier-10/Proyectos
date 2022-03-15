@@ -5,40 +5,90 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="estilo.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka&family=Montserrat:wght@300&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
   <title>Juego de Tres en Raya</title>
 </head>
 
 <body>
   <script src="index.js"></script>
   <script src="ganadores.js"></script>
-  
-  <h1> 3 En Raya </h1>
-
-  <button type="button" id="reset">Restablecer</button>
-
-  <div class="Tablero" id="TT">
-    <div class="Caja1" id="1" onclick="rellenar(id);Ganador(id)"></div>
-    <div class="Caja2" id="2" onclick="rellenar(id);Ganador(id)"></div>
-    <div class="Caja3" id="3" onclick="rellenar(id);Ganador(id)"></div>
-    <div class="Caja4" id="4" onclick="rellenar(id);Ganador(id)"></div>
-    <div class="Caja5" id="5" onclick="rellenar(id);Ganador(id)"></div>
-    <div class="Caja6" id="6" onclick="rellenar(id);Ganador(id)"></div>
-    <div class="Caja7" id="7" onclick="rellenar(id);Ganador(id)"></div>
-    <div class="Caja8" id="8" onclick="rellenar(id);Ganador(id)"></div>
-    <div class="Caja9" id="9" onclick="rellenar(id);Ganador(id)"></div>
+  <div>
+    <div class="Contenedor">
+      <div class="play">
+        <!--Nombre-->
+        <p>Jugador 1</p>
+        <div id="jugador1"></div>
+        <!--Selección de figura-->
+        <p>Elije tu figura</p>
+        <div class="contenedorFiguras">
+          <div id="cir" onclick="seleccion(id)"><img src="img/1.png" alt="" srcset=""></div>
+          <div id="cua" onclick="seleccion(id)"><img src="img/2.png" alt="" srcset=""></div>
+          <div id="tri" onclick="seleccion(id)"><img src="img/3.png" alt="" srcset=""></div>
+          <div id="eq" onclick="seleccion(id)"><img src="img/4.png" alt="" srcset=""></div>
+        </div>
+        <div id="errorFig1"></div>
+        <div id="point"></div>
+        <!--Seleccion de color-->
+        <p>Elige el color de tu figura</p>
+        <div class="contenedorColores">
+          <div class="color1 contenedorColor"></div>
+          <div class="color2 contenedorColor"></div>
+          <div class="color3 contenedorColor"></div>
+          <div class="color4 contenedorColor"></div>
+        </div>
+        <!--<div id="color1"></div>-->
+      </div>
+      <!-- Botón y título -->
+      <div class="tituloYBtn">
+        <h3 class="titulo"> 3 En Raya </h3>
+        <div class="btn">
+          <button type="button" id="Reset">Volver a jugar</button>
+        </div>
+      </div>
+      <div class="play">
+        <!--Nombre-->
+        <p>Jugador 2</p>
+        <div id="jugador2"></div>
+        <!--Selección de figura-->
+        <p>Elije tu figura</p>
+        <div class="contenedorFiguras">
+          <div id="cir2" onclick="seleccion2(id)"><img src="img/1.png" alt="" srcset=""></div>
+          <div id="cua2" onclick="seleccion2(id)"><img src="img/2.png" alt="" srcset=""></div>
+          <div id="tri2" onclick="seleccion2(id)"><img src="img/3.png" alt="" srcset=""></div>
+          <div id="eq2" onclick="seleccion2(id)"><img src="img/4.png" alt="" srcset=""></div>
+        </div>
+        <div id="errorFig2"></div>
+        <div id="point"></div>
+        <!--Seleccion de color-->
+        <p>Elige el color de tu figura</p>
+        <div class="contenedorColores">
+          <div class="color1 contenedorColor"></div>
+          <div class="color2 contenedorColor"></div>
+          <div class="color3 contenedorColor"></div>
+          <div class="color4 contenedorColor"></div>
+        </div>
+        <!--<div id="color2"></div>-->
+      </div>
+    </div>
+    <!-- Tablero -->
+    <div class="tablerocontainer">
+      <div class="Tablero" id="TT">
+        <div class="Caja1 " id="1" onclick="rellenar(id);Ganador(id)"></div>
+        <div class="Caja2 " id="2" onclick="rellenar(id);Ganador(id)"></div>
+        <div class="Caja3 " id="3" onclick="rellenar(id);Ganador(id)"></div>
+        <div class="Caja4 " id="4" onclick="rellenar(id);Ganador(id)"></div>
+        <div class="Caja5 " id="5" onclick="rellenar(id);Ganador(id)"></div>
+        <div class="Caja6 " id="6" onclick="rellenar(id);Ganador(id)"></div>
+        <div class="Caja7 " id="7" onclick="rellenar(id);Ganador(id)"></div>
+        <div class="Caja8 " id="8" onclick="rellenar(id);Ganador(id)"></div>
+        <div class="Caja9 " id="9" onclick="rellenar(id);Ganador(id)"></div>
+      </div>
+    </div>
   </div>
-
-  <h3>JUGADORES</h3>
-
-  <div class="Figura_Circulo" id="jugador1">
-    <p>Jugador 1</p>
-  </div>
-  
-  <div class="Figura_Triangulo" id="jugador2">
-    <p>Jugador2</p>
-  </div>
-
   <script src="./menu/index.js" type="module"></script>
 </body>
 

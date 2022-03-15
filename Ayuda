@@ -1,0 +1,30 @@
+<script src="index.js"></script>
+  <script src="ganadores.js"></script>
+  
+  <h1> 3 En Raya </h1>
+
+  <button type="button" id="reset">Restablecer</button>
+
+  <div class="Tablero" id="TT">
+    <div class="Caja1" id="1" onclick="rellenar(id);Ganador(id)"></div>
+    <div class="Caja2" id="2" onclick="rellenar(id);Ganador(id)"></div>
+    <div class="Caja3" id="3" onclick="rellenar(id);Ganador(id)"></div>
+    <div class="Caja4" id="4" onclick="rellenar(id);Ganador(id)"></div>
+    <div class="Caja5" id="5" onclick="rellenar(id);Ganador(id)"></div>
+    <div class="Caja6" id="6" onclick="rellenar(id);Ganador(id)"></div>
+    <div class="Caja7" id="7" onclick="rellenar(id);Ganador(id)"></div>
+    <div class="Caja8" id="8" onclick="rellenar(id);Ganador(id)"></div>
+    <div class="Caja9" id="9" onclick="rellenar(id);Ganador(id)"></div>
+  </div>
+
+  <h3>JUGADORES</h3>
+
+  <div class="Figura_Circulo" id="jugador1">
+    <p>Jugador 1</p>
+  </div>
+  
+  <div class="Figura_Triangulo" id="jugador2">
+    <p>Jugador2</p>
+  </div>
+
+  <script src="./menu/index.js" type="module"></script>

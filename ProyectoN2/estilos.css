@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Montserrat:wght@300&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    height: 100vh;
+    font-family: 'Fredoka', sans-serif;
+}
+/*--- Menú ---*/
+.Contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.play{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.play p{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 0px;
+}
+.contenedorFiguras{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+}
+.contenedorFiguras img{
+    margin: 7px;
+    width: 25px;
+}
+.contenedorFigurasClick {
+    width: 40px;
+    height: 40px;
+    border-radius: 90px;
+    background-color: #F68989;
+}
+
+.txterror{
+    color: red;
+    font-size: 15px;
+    text-align: center;
+}
+
+.contenedorColores {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.color1 {
+    background-color: #1bd832; 
+}
+.color2 {
+    background-color: #ff4500; 
+}
+.color3 {
+    background-color: #800080; 
+}
+.color4 {
+    background-color: #20b2aa; 
+}
+.contenedorColor {
+    width: 25px;
+    height: 25px;
+    border-radius: 12px;
+}
+.tituloYBtn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+}
+.titulo {
+    margin: 15px;
+    color: #fff;
+    letter-spacing: 10px;
+    font-size: 30px;
+    text-align: center
+}
+/*--- Tablero y botón ----*/
+.btn{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+button{
+    width: 300px;
+    border: none;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+}
+.tablerocontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Tablero {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    grid-gap: 0.5rem;
+    grid-template-areas:
+        "Caja1 Caja2 Caja3"
+        "Caja4 Caja5 Caja6"
+        "Caja7 Caja8 Caja9";
+}
+.Caja1 {
+    grid-area: Caja1;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.Caja2 {
+    grid-area: Caja2;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.Caja3 {
+    grid-area: Caja3;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.Caja4 {
+    grid-area: Caja4;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.Caja5 {
+    grid-area: Caja5;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.Caja6 {
+    grid-area: Caja6;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.Caja7 {
+    grid-area: Caja7;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.Caja8 {
+    grid-area: Caja8;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.Caja9 {
+    grid-area: Caja9;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+/*---- Figuras ----*/
+.CajaPresionada {
+    grid-area: Caja1;
+    background-color: blue;
+}
+.Figura_X {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    background-color: "";
+    border-radius: 5px;
+    position: relative;
+}
+
+.Figura_X:after {
+    position: absolute;
+    content: "\274c";
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+}
+
+.Figura_X:active{
+    border-radius: 90px;
+    opacity: 0.6;
+}
+
+.Figura_Circulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.Figura_Circulo::after {
+    position: absolute;
+    content: "";
+    width: 70px;
+    height: 70px;
+    margin: 0;
+    text-align: center;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #000000;
+}
+
+.Figura_Circulo:active{
+    border-radius: 90px;
+    opacity: 0.6;
+}
+
+.Figura_Cuadrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    background-color: "";
+    border-radius: 5px;
+    position: relative;
+}
+
+.Figura_Cuadrado::after {
+    position: absolute;
+    margin: 0 auto;
+    content: "";
+    width: 50px;
+    height: 50px;
+    border: 8px solid #000000;
+    background: transparent;
+}
+.Figura_Cuadrado:active{
+    border-radius: 90px;
+    opacity: 0.6;
+}
+
+.Figura_Triangulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    background-color: "";
+    border-radius: 5px;
+    position: relative;
+}
+
+.Figura_Triangulo::after {
+    position: absolute;
+    margin: 0 auto;
+    content: "";
+    border-right: 35px solid transparent;
+    border-bottom: 60px solid rgb(0, 0, 0);
+    border-left: 35px solid transparent;
+    background: transparent;
+}
+
+.Figura_Triangulo:active{
+    border-radius: 90px;
+    opacity: 0.6;
+}
+/*PARA HACER PRUEBAS*/
+/*#color1 {
+    width: 50px;
+    height: 50px;   
+}
+#color2 {
+    width: 50px;
+    height: 50px;
+}*/
