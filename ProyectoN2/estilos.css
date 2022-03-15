@@ -45,6 +45,12 @@ body{
     background-color: #F68989;
 }
 
+.txterror{
+    color: red;
+    font-size: 15px;
+    text-align: center;
+}
+
 .contenedorColores {
     display: flex;
     flex-direction: row;
