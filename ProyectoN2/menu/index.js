@@ -17,9 +17,9 @@ let name1 = document.createElement("p");
 name1.innerHTML = jugador1.mostrarNombre();
 document.getElementById("nombrecont1").appendChild(name1);
 
- let name2 = document.createElement("p");
- name2.innerHTML = jugador2.mostrarNombre();
- document.getElementById("nombrecont2").appendChild(name2);
+let name2 = document.createElement("p");
+name2.innerHTML = jugador2.mostrarNombre();
+document.getElementById("nombrecont2").appendChild(name2);
 
 // let colors1 = document.getElementById('color1');
 // colors1.style.backgroundColor = jugador1.mostrarColor(); 

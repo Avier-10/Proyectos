@@ -97,9 +97,7 @@ let Ganador = (id) => {
         }
     }
     if (Juego_Terminado === 1) {
-        console.log("Jugador 1=", Contador_J1)
         document.getElementById("point1").innerHTML = "Ganados = " + Contador_J1
-        console.log("Jugador 2=", Contador_J2)
         document.getElementById("point2").innerHTML = "Ganados = " + Contador_J2
     }
 }
