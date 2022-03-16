@@ -1,8 +1,21 @@
 //Importaciones
 
-// nombre de jugadores
 let nombre1 = prompt("Ingresa tu nombre jugador 1: ");
+
+while(nombre1 == "" ){
+    nombre1 = prompt("Ingresa tu nombre jugador 1: ");
+}
+
 let nombre2 = prompt("Ingresa tu nombre jugador 2: ");
+
+while(nombre2 == "" ){
+    nombre2 = prompt("Ingresa tu nombre jugador 2: ");
+}
+
+// nombre de jugadores
+//let nombre1 = prompt("Ingresa tu nombre jugador 1: ");
+//let nombre2 = prompt("Ingresa tu nombre jugador 2: ");
+
 
 // color de figuras
 //const color1 = prompt("Jugador 1 elige el color de tu figura: verde, naranja, morado o azul ");
@@ -11,6 +24,7 @@ let nombre2 = prompt("Ingresa tu nombre jugador 2: ");
 // ejecutar clase
 const jugador1 = new Jugadores(nombre1);
 const jugador2 = new Jugadores(nombre2);
+
 
 // mostrar en el Dom 
 let name1 = document.createElement("p");
