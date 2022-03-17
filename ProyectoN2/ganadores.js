@@ -18,81 +18,81 @@ let Ganador = (id) => {
     if (Juego_Terminado === 0) {
 
         if (Caja_1[0].classList.contains(pl1) && Caja_2[0].classList.contains(pl1) && Caja_3[0].classList.contains(pl1)) {
-            document.getElementById("Finish").innerHTML = "Termino el Juego" 
+            document.getElementById("Finish").innerHTML = `Termino el Juego! <br> Gano ${nombre1}!`
             Juego_Terminado = 1
             Contador_J1++
         } else if (Caja_1[0].classList.contains(pl2) && Caja_2[0].classList.contains(pl2) && Caja_3[0].classList.contains(pl2)) {
-            document.getElementById("Finish").innerHTML = "Termino el Juego" 
+            document.getElementById("Finish").innerHTML =  `Termino el Juego! <br> Gano ${nombre2}!`
             Juego_Terminado = 1
             Contador_J2++
         }
 
         if (Caja_4[0].classList.contains(pl1) && Caja_5[0].classList.contains(pl1) && Caja_6[0].classList.contains(pl1)) {
-            document.getElementById("Finish").innerHTML = "Termino el Juego" 
+            document.getElementById("Finish").innerHTML =  `Termino el Juego! <br> Gano ${nombre1}!`
             Juego_Terminado = 1
             Contador_J1++
         } else if (Caja_4[0].classList.contains(pl2) && Caja_5[0].classList.contains(pl2) && Caja_6[0].classList.contains(pl2)) {
-            document.getElementById("Finish").innerHTML = "Termino el Juego" 
+            document.getElementById("Finish").innerHTML = `Termino el Juego! <br> Gano ${nombre2}!`
             Juego_Terminado = 1
             Contador_J2++
         }
 
         if (Caja_7[0].classList.contains(pl1) && Caja_8[0].classList.contains(pl1) && Caja_9[0].classList.contains(pl1)) {
-            document.getElementById("Finish").innerHTML = "Termino el Juego" 
+            document.getElementById("Finish").innerHTML =  `Termino el Juego! <br> Gano ${nombre1}!`
             Juego_Terminado = 1
             Contador_J1++
         } else if (Caja_7[0].classList.contains(pl2) && Caja_8[0].classList.contains(pl2) && Caja_9[0].classList.contains(pl2)) {
-            document.getElementById("Finish").innerHTML = "Termino el Juego" 
+            document.getElementById("Finish").innerHTML =  `Termino el Juego! <br> Gano ${nombre2}!`
             Juego_Terminado = 1
             Contador_J2++
         }
 
         if (Caja_1[0].classList.contains(pl1) && Caja_5[0].classList.contains(pl1) && Caja_9[0].classList.contains(pl1)) {
-            document.getElementById("Finish").innerHTML = "Termino el Juego" 
+            document.getElementById("Finish").innerHTML =  `Termino el Juego! <br> Gano ${nombre1}!`
             Juego_Terminado = 1
             Contador_J1++
         } else if (Caja_1[0].classList.contains(pl2) && Caja_5[0].classList.contains(pl2) && Caja_9[0].classList.contains(pl2)) {
-            document.getElementById("Finish").innerHTML = "Termino el Juego" 
+            document.getElementById("Finish").innerHTML =  `Termino el Juego! <br> Gano ${nombre2}!`
             Juego_Terminado = 1
             Contador_J2++
         }
 
         if (Caja_3[0].classList.contains(pl1) && Caja_5[0].classList.contains(pl1) && Caja_7[0].classList.contains(pl1)) {
-            document.getElementById("Finish").innerHTML = "Termino el Juego" 
+            document.getElementById("Finish").innerHTML =  `Termino el Juego! <br> Gano ${nombre1}!`
             Juego_Terminado = 1
             Contador_J1++
         } else if (Caja_3[0].classList.contains(pl2) && Caja_5[0].classList.contains(pl2) && Caja_7[0].classList.contains(pl2)) {
-            document.getElementById("Finish").innerHTML = "Termino el Juego" 
+            document.getElementById("Finish").innerHTML = `Termino el Juego! <br> Gano ${nombre2}!`
             Juego_Terminado = 1
             Contador_J2++
         }
 
         if (Caja_1[0].classList.contains(pl1) && Caja_4[0].classList.contains(pl1) && Caja_7[0].classList.contains(pl1)) {
-            document.getElementById("Finish").innerHTML = "Termino el Juego" 
+            document.getElementById("Finish").innerHTML =  `Termino el Juego! <br> Gano ${nombre1}!`
             Juego_Terminado = 1
             Contador_J1++
         } else if (Caja_1[0].classList.contains(pl2) && Caja_4[0].classList.contains(pl2) && Caja_7[0].classList.contains(pl2)) {
-            document.getElementById("Finish").innerHTML = "Termino el Juego" 
+            document.getElementById("Finish").innerHTML = `Termino el Juego! <br> Gano ${nombre2}!`
             Juego_Terminado = 1
             Contador_J2++
         }
 
         if (Caja_2[0].classList.contains(pl1) && Caja_5[0].classList.contains(pl1) && Caja_8[0].classList.contains(pl1)) {
-            document.getElementById("Finish").innerHTML = "Termino el Juego" 
+            document.getElementById("Finish").innerHTML =  `Termino el Juego! <br> Gano ${nombre1}!`
             Juego_Terminado = 1
             Contador_J1++
         } else if (Caja_2[0].classList.contains(pl2) && Caja_5[0].classList.contains(pl2) && Caja_8[0].classList.contains(pl2)) {
-            document.getElementById("Finish").innerHTML = "Termino el Juego" 
+            document.getElementById("Finish").innerHTML =  `Termino el Juego! <br> Gano ${nombre2}!`
             Juego_Terminado = 1
             Contador_J2++
         }
 
         if (Caja_3[0].classList.contains(pl1) && Caja_6[0].classList.contains(pl1) && Caja_9[0].classList.contains(pl1)) {
-            document.getElementById("Finish").innerHTML = "Termino el Juego" 
+            document.getElementById("Finish").innerHTML =  `Termino el Juego! <br> Gano ${nombre1}!`
             Juego_Terminado = 1
             Contador_J1++
         } else if (Caja_3[0].classList.contains(pl2) && Caja_6[0].classList.contains(pl2) && Caja_9[0].classList.contains(pl2)) {
-            document.getElementById("Finish").innerHTML = "Termino el Juego" 
+            document.getElementById("Finish").innerHTML =  `Termino el Juego! <br> Gano ${nombre2}!`
             Juego_Terminado = 1
             Contador_J2++
         }
