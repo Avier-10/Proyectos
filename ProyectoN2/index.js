@@ -1,4 +1,7 @@
 let selector = 0
+let pl1
+let pl2
+
 let rellenar = (id) => {
     let Reset = document.getElementById("reset")
     let Caja_1 = document.getElementsByClassName("Caja1")
@@ -41,12 +44,11 @@ let rellenar = (id) => {
     if (Juego_Terminado === 0) {
         if (selector === 0 && document.getElementById(id).classList.length === 1) {
             document.getElementById(id).classList.add(pl1)
-            document.getElementById(id).style.background = resultado;
+            document.getElementById(id).style.background = colorJugador1;
             selector = 1
         } else if (selector === 1 && document.getElementById(id).classList.length === 1) {
             document.getElementById(id).classList.add(pl2)
-            document.getElementById(id).style.background = resultado2
-            //
+            document.getElementById(id).style.background = colorJugador2
             selector = 0
         } else {
             alert(`No puedes realizar este movimiento, la caja ${id} esta ocupada`)
@@ -94,5 +96,3 @@ let seleccion2 = (id) => {
     seleccion3(id, "tri2", "pl2", "Figura_Triangulo", pl1, "cir2", "cua2", "tri2", "eq2", "errorFig2")
     seleccion3(id, "eq2", "pl2", "Figura_X", pl1, "cir2", "cua2", "tri2", "eq2", "errorFig2")
 };
-let pl1
-let pl2

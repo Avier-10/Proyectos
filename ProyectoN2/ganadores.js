@@ -1,6 +1,7 @@
 let Juego_Terminado = 0
 let Contador_J1 = 0
 let Contador_J2 = 0
+
 let Ganador = (id) => {
     let Jugador1 = document.getElementById("jugador1")
     let Jugador2 = document.getElementById("jugador2")
