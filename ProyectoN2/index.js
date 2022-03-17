@@ -1,7 +1,3 @@
-let selector = 0
-let pl1
-let pl2
-
 let rellenar = (id) => {
     let Reset = document.getElementById("reset")
     let Caja_1 = document.getElementsByClassName("Caja1")
@@ -96,3 +92,7 @@ let seleccion2 = (id) => {
     seleccion3(id, "tri2", "pl2", "Figura_Triangulo", pl1, "cir2", "cua2", "tri2", "eq2", "errorFig2")
     seleccion3(id, "eq2", "pl2", "Figura_X", pl1, "cir2", "cua2", "tri2", "eq2", "errorFig2")
 };
+
+let selector = 0
+let pl1
+let pl2
