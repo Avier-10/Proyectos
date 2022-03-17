@@ -90,18 +90,6 @@ body{
     flex-direction: row;
     justify-content: space-around;
 }
-.color1 {
-    background-color: #1bd832; 
-}
-.color2 {
-    background-color: #ff4500; 
-}
-.color3 {
-    background-color: #800080; 
-}
-.color4 {
-    background-color: #20b2aa; 
-}
 .contenedorColor {
     width: 25px;
     height: 25px;
@@ -163,13 +151,11 @@ button{
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
 }
-
 .Caja2 {
     grid-area: Caja2;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
 }
-
 .Caja3 {
     grid-area: Caja3;
     background-color: rgb(255, 255, 255);
@@ -181,31 +167,26 @@ button{
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
 }
-
 .Caja5 {
     grid-area: Caja5;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
 }
-
 .Caja6 {
     grid-area: Caja6;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
 }
-
 .Caja7 {
     grid-area: Caja7;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
 }
-
 .Caja8 {
     grid-area: Caja8;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
 }
-
 .Caja9 {
     grid-area: Caja9;
     background-color: rgb(255, 255, 255);
@@ -222,19 +203,16 @@ button{
     border-radius: 5px;
     position: relative;
 }
-
 .Figura_X:after {
     position: absolute;
     content: "\274c";
     font-size: 50px;
     color: rgb(0, 0, 0);
 }
-
 .Figura_X:active{
     border-radius: 90px;
     opacity: 0.6;
 }
-
 .Figura_Circulo {
     display: flex;
     justify-content: center;
@@ -244,7 +222,6 @@ button{
     border-radius: 5px;
     position: relative;
 }
-
 .Figura_Circulo::after {
     position: absolute;
     content: "";
@@ -257,12 +234,10 @@ button{
     border-radius: 50%;
     background: #000000;
 }
-
 .Figura_Circulo:active{
     border-radius: 90px;
     opacity: 0.6;
 }
-
 .Figura_Cuadrado {
     display: flex;
     justify-content: center;
@@ -273,7 +248,6 @@ button{
     border-radius: 5px;
     position: relative;
 }
-
 .Figura_Cuadrado::after {
     position: absolute;
     margin: 0 auto;
@@ -287,7 +261,6 @@ button{
     border-radius: 90px;
     opacity: 0.6;
 }
-
 .Figura_Triangulo {
     display: flex;
     justify-content: center;
@@ -298,7 +271,6 @@ button{
     border-radius: 5px;
     position: relative;
 }
-
 .Figura_Triangulo::after {
     position: absolute;
     margin: 0 auto;
@@ -308,7 +280,6 @@ button{
     border-left: 35px solid transparent;
     background: transparent;
 }
-
 .Figura_Triangulo:active{
     border-radius: 90px;
     opacity: 0.6;
@@ -316,12 +287,3 @@ button{
 .letra{
     font-size: 20px;
 }
-/*PARA HACER PRUEBAS*/
-/*#color1 {
-    width: 50px;
-    height: 50px;   
-}
-#color2 {
-    width: 50px;
-    height: 50px;
-}*/
