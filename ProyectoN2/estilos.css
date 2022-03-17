@@ -114,7 +114,8 @@ body{
     color: #fff;
     letter-spacing: 8px;
     font-size: 23px;
-    text-align: center
+    text-align: center;
+    width: 500px;
 }
 /*--- Tablero y botón ----*/
 .btn{
