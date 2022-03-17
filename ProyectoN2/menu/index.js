@@ -1,14 +1,15 @@
 // variables
-let nombre1 = prompt("Ingresa tu nombre jugador 1: ");
-let nombre2 = prompt("Ingresa tu nombre jugador 2: ");
-let colorJugador1
-let colorJugador2
 const color = ["verde", "naranja", "morado", "azul"];
 const color2 = ["verde", "naranja", "morado", "azul"];
+
+
+let nombre1 = prompt("Ingresa tu nombre jugador 1: ");
 
 while(nombre1 == "" ){
     nombre1 = prompt("Ingresa tu nombre jugador 1: ");
 }
+
+let nombre2 = prompt("Ingresa tu nombre jugador 2: ");
 
 while(nombre2 == "" ){
     nombre2 = prompt("Ingresa tu nombre jugador 2: ");
@@ -89,5 +90,8 @@ function colorSeleccionado2(colorJugador1) {
             colorJugador2 = morado
         }
     }
-    return colorJugador1
+    return colorJugador2
 }
+
+let colorJugador1
+let colorJugador2
