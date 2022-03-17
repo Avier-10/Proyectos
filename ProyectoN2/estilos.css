@@ -205,10 +205,10 @@ button{
 }
 .Figura_X:after {
     position: absolute;
-    content: "\0058";
-    font-size: 50px;
-   
+    content: "\2716";
+    font-size: 80px;
 }
+
 .Figura_X:active{
     border-radius: 90px;
     opacity: 0.6;
